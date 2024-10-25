@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="w-full my-0">
+      <section class="bg-[#FABD38] w-full relative py-[8px]">
+        <div class="container mx-auto">
+          <p
+            class="text-xs px-5 font-medium mx-auto text-center md:text-sm md:font-semibold"
+          >
+            Free delivery on your first order of $100 or more* with the promo
+            code : KILLASIK1ST
+          </p>
+          <img
+            src="images/close.png"
+            alt=""
+            class="absolute top-[8px] right-[5px]"
+          />
+        </div>
+      </section>
+      <header class="bg-black flex flex-col px-[53px]">
+        <div class="container mx-auto">
+          <div class="py-[10px] flex flex-row gap-x-1 justify-end items-center">
+            <p class="text-xs font-medium leading-4 text-white">Follow us:</p>
+            <div class="flex flex-row gap-2 justify-center items-center">
+              <a href="#"
+                ><img src="images/Twitter.png" alt="" class="py-2 w-[15px]"
+              /></a>
+              <a href="#"
+                ><img src="images/Pinterest.png" alt="" class="py-2 w-[15px]"
+              /></a>
+              <a href="#"
+                ><img src="images/Facebook.png" alt="" class="py-2 w-[15px]"
+              /></a>
+              <a href="#"
+                ><img src="images/Youtube.png" alt="" class="py-2 w-[15px]"
+              /></a>
+              <a href="#"
+                ><img src="images/Instagram.png" alt="" class="py-2 w-[15px]"
+              /></a>
+            </div>
+          </div>
+          <div class="pt-5 pb-10 flex flex-row items-center justify-between">
+            <img src="images/logo.png" alt="logo" class="w-[342px]" />
+            <div
+              class="flex flex-row gap-x-1 bg-black px-2 py-1 border border-solid border-white rounded-lg"
+            >
+              <input
+                type="text"
+                placeholder="Search for wines..."
+                class="border-none text-white outline-none bg-black"
+              />
+              <img
+                src="images/search.png"
+                alt="search"
+                class="cursor-pointer"
+              />
+            </div>
+            <div class="flex flex-row gap-x-2 items-center justify-between">
+              <div
+                class="flex flex-col items-start text-white bg-black justify-start"
+              >
+                <label class="font-medium text-xs leading-3 text-left"
+                  >Currency</label
+                >
+                <select
+                  name="currency"
+                  id="currency"
+                  class="bg-black text-white border border-white rounded-lg text-sm font-normal py-0.5"
+                >
+                  <option value="USD">$ USD</option>
+                  <option value="RS">INR Rupees</option>
+                </select>
+              </div>
+              <div
+                class="flex flex-col items-start text-white bg-black justify-start"
+              >
+                <label class="text-xs leading-3 font-medium text-left"
+                  >Language</label
+                >
+                <select
+                  name="lang"
+                  id="lang"
+                  class="bg-black text-white border border-white rounded-lg text-sm font-normal py-0.5"
+                >
+                  <option value="en">English</option>
+                  <option value="ur">Urdu</option>
+                  <option value="es">Spanish</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-row gap-x-2 items-center justify-between">
+              <div class="flex flex-col items-center justify-center">
+                <a href="#"
+                  ><img src="images/user.png" alt="user" class="w-[30px]"
+                /></a>
+                <p class="text-white text-xs font-medium">My Account</p>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <a href="#"
+                  ><img src="images/bag.png" alt="bag" class="w-[30px]"
+                /></a>
+                <p class="text-white text-xs font-medium">Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="bg-black flex flex-col pb-12">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-row justify-center items-center border-y-2 border-white gap-4"
+          >
+            <div
+              class="flex items-center gap-[6px] all-wines relative cursor-pointer"
+            >
+              <a href="#" class="text-white">All Wines</a>
+              <div class="link-chevron-icon">
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.70508 0.75L6.20508 5.25L10.7051 0.75"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="absolute -left-[550px] top-[25px] bg-black p-4 text-white all-wines-dropdown z-[999]"
+              >
+                <div
+                  class="flex flex-row items-start justify-between gap-3 w-[1200px]"
+                >
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-[6px] all-wines relative cursor-pointer"
+            >
+              <a href="#" class="text-white">Champagne </a>
+              <div class="link-chevron-icon">
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.70508 0.75L6.20508 5.25L10.7051 0.75"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="absolute -left-[550px] top-[25px] bg-black p-4 text-white all-wines-dropdown z-[999]"
+              >
+                <div
+                  class="flex flex-row items-start justify-between gap-3 w-[1200px]"
+                >
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-[6px] all-wines relative cursor-pointer"
+            >
+              <a href="#" class="text-white">Delicatessen </a>
+              <div class="link-chevron-icon">
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.70508 0.75L6.20508 5.25L10.7051 0.75"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="absolute -left-[550px] top-[25px] bg-black p-4 text-white all-wines-dropdown z-[999]"
+              >
+                <div
+                  class="flex flex-row items-start justify-between gap-3 w-[1200px]"
+                >
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-[6px] all-wines relative cursor-pointer"
+            >
+              <a href="#" class="text-white">Spirits </a>
+              <div class="link-chevron-icon">
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.70508 0.75L6.20508 5.25L10.7051 0.75"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="absolute -left-[550px] top-[25px] bg-black p-4 text-white all-wines-dropdown z-[999]"
+              >
+                <div
+                  class="flex flex-row items-start justify-between gap-3 w-[1200px]"
+                >
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-[6px] all-wines relative cursor-pointer"
+            >
+              <a href="#" class="text-white">Price List </a>
+              <div class="link-chevron-icon">
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.70508 0.75L6.20508 5.25L10.7051 0.75"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="absolute -left-[550px] top-[25px] bg-black p-4 text-white all-wines-dropdown z-[999]"
+              >
+                <div
+                  class="flex flex-row items-start justify-between gap-3 w-[1200px]"
+                >
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center">
+                    <p>Red Wine</p>
+                    <hr class="border-t border-white p-2 w-full" />
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                    <a href="#">Vino Tinto</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <div class="custom-prev">
+              <img src="images/button-prev.png" alt="" class="w-[252px]" />
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/Paste image.png"
+                    alt="paste image"
+                    class="w-full object-cover pt-[80px] pb-12 px-[52px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/Paste image.png"
+                    alt="paste image"
+                    class="w-full object-cover pt-[80px] pb-12 px-[52px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/Paste image.png"
+                    alt="paste image"
+                    class="w-full object-cover pt-[80px] pb-12 px-[52px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/Paste image.png"
+                    alt="paste image"
+                    class="w-full object-cover pt-[80px] pb-12 px-[52px]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="custom-next">
+              <img src="images/button-next.png" alt="" class="w-[252px]" />
+            </div>
+          </div>
+          <div class="grid grid-cols-4 py-[52px] px-[142px] gap-4">
+            <div class="flex flex-col justify-center items-center px-3 py-3">
+              <img src="images/truck.png" alt="truck" class="" />
+              <p class="text-lg text-white text-center">Free shipping</p>
+              <p class="text-sm text-[#807E7E] text-center">Order above $200</p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border-l-2 border-white px-3 py-3"
+            >
+              <img src="images/money.png" alt="truck" />
+              <p class="text-lg text-white text-center">Money Back</p>
+              <p class="text-sm text-[#807E7E] text-center">
+                30 days Money back Gurrantee
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border-l-2 border-white px-3 py-3"
+            >
+              <img src="images/phone.png" alt="truck" />
+              <p class="text-lg text-white text-center">Premium Support</p>
+              <p class="text-sm text-[#807E7E] text-center">
+                Phone and email support
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border-l-2 border-white px-3 py-3"
+            >
+              <img src="images/lock.png" alt="truck" />
+              <p class="text-lg text-white text-center">Secured Payments</p>
+              <p class="text-sm text-[#807E7E] text-center">
+                Secured by stripes
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-row items-center justify-between px-[52px] py-[70px]"
+          >
+            <div class="border-dashed border-2 border-black w-[30%]"></div>
+            <p class="text-4xl font-medium text-black">FEATURED BRANDS</p>
+            <div class="border-dashed border-2 border-black w-[30%]"></div>
+          </div>
+          <div
+            class="grid grid-cols-4 px-[94px] pb-[70px] gap-5 place-items-center"
+          >
+            <img src="images/brand1.png" alt="" />
+            <img src="images/brand2.png" alt="" />
+            <img src="images/brand3.png" alt="" />
+            <img src="images/brand4.png" alt="" />
+            <img src="images/brand5.png" alt="" />
+            <img src="images/brand6.png" alt="" />
+            <img src="images/brand7.png" alt="" />
+            <img src="images/brand8.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="bg-black px-[52px] py-4">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-row justify-between items-center gap-x-10 pt-[50px]"
+          >
+            <div class="border-solid border-[1px] border-white w-[37%]"></div>
+            <p class="text-2xl font-semibold text-white">
+              Critically Acclaimed
+            </p>
+            <div class="border-solid border-[1px] border-white w-[37%]"></div>
+          </div>
+          <div class="grid grid-cols-4 pt-[52px] gap-x-2">
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-black px-[52px] py-4">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-row justify-between items-center gap-x-10 pt-[50px]"
+          >
+            <div class="border-solid border-[1px] border-white w-[37%]"></div>
+            <p class="text-2xl font-semibold text-white">Iconic Wines</p>
+            <div class="border-solid border-[1px] border-white w-[37%]"></div>
+          </div>
+          <div class="grid grid-cols-4 pt-[52px] gap-x-2">
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#454545] px-[52px] py-4">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-row justify-between items-center gap-x-10 pt-[50px]"
+          >
+            <div class="border-solid border-[1px] border-white w-[37%]"></div>
+            <p class="text-2xl font-semibold text-white">Special Offers</p>
+            <div class="border-solid border-[1px] border-white w-[37%]"></div>
+          </div>
+          <div class="grid grid-cols-4 pt-[52px] gap-x-2">
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 bg-[#2B2B2B]">
+              <div class="bg-white flex justify-center">
+                <img src="images/product.png " alt="" />
+              </div>
+              <p class="text-white text-2xl font-medium pt-[2px]">
+                Clos de papes 2012
+              </p>
+              <p class="text-[#A7A7A7] text-lg font-medium py-1">Red Wine</p>
+              <hr class="border border-[#A7A7A7]" />
+              <div
+                class="flex flex-row items-center justify-start gap-x-2 py-2"
+              >
+                <p class="text-white font-medium text-lg line-through">
+                  $19.99
+                </p>
+                <p class="text-[#FABD38] font-bold text-2xl">%14.99</p>
+              </div>
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row h-full justify-center">
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tl-md rounded-bl-md"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="1"
+                    class="w-[65px] text-center"
+                  />
+                  <button
+                    class="text-white bg-[#454545] w-11 text-lg rounded-tr-md rounded-br-md"
+                  >
+                    +
+                  </button>
+                </div>
+                <button><img src="images/Button1.png" alt="" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-black px-[52px] py-4">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-row justify-between items-center gap-x-10 pt-[50px]"
+          >
+            <div class="border-solid border-[1px] border-white w-[37%]"></div>
+            <p class="text-2xl font-semibold text-white">Our Stories</p>
+            <div class="border-solid border-[1px] border-white w-[37%]"></div>
+          </div>
+          <div class="grid grid-cols-4 pt-[52px] gap-x-2">
+            <div>
+              <img src="images/story1.png " alt="" />
+              <p class="text-white text-lg font-medium pt-[2px]">
+                12/January/2024
+              </p>
+              <p class="text-white text-xl font-medium py-1">
+                The Process behind our award wining wines
+              </p>
+            </div>
+            <div>
+              <img src="images/story2.png " alt="" />
+              <p class="text-white text-lg font-medium pt-[2px]">
+                12/January/2024
+              </p>
+              <p class="text-white text-xl font-medium py-1">
+                The Process behind our award wining wines
+              </p>
+            </div>
+            <div>
+              <img src="images/story3.png " alt="" />
+              <p class="text-white text-lg font-medium pt-[2px]">
+                12/January/2024
+              </p>
+              <p class="text-white text-xl font-medium py-1">
+                The Process behind our award wining wines
+              </p>
+            </div>
+            <div>
+              <img src="images/story4.png " alt="" />
+              <p class="text-white text-lg font-medium pt-[2px]">
+                12/January/2024
+              </p>
+              <p class="text-white text-xl font-medium py-1">
+                The Process behind our award wining wines
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-black px-[52px] py-4">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-3 pt-[52px] gap-3 place-items-center">
+            <div class="row-span-2 flex flex-col items-center justify-center">
+              <img
+                src="images/card1.png "
+                alt=""
+                class="w-full h-[775px] object-cover"
+              />
+              <p class="text-white text-4xl font-medium pt-[10px]">Red Wines</p>
+              <a href="#" class="text-white text-xl font-medium py-2"
+                >Shop Now</a
+              >
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="images/card2.png " alt="" class="w-full object-cover" />
+              <p class="text-white text-4xl font-medium pt-[10px]">
+                French Wines
+              </p>
+              <a href="#" class="text-white text-xl font-medium py-2"
+                >Shop Now</a
+              >
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="images/card3.png " alt="" class="w-full object-cover" />
+              <p class="text-white text-4xl font-medium pt-[10px]">
+                White Wines
+              </p>
+              <a href="#" class="text-white text-xl font-medium py-2"
+                >Shop Now</a
+              >
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="images/card4.png " alt="" class="w-full object-cover" />
+              <p class="text-white text-4xl font-medium pt-[10px]">
+                Sweet Wines
+              </p>
+              <a href="#" class="text-white text-xl font-medium py-2"
+                >Shop Now</a
+              >
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="images/card5.png " alt="" class="w-full object-cover" />
+              <p class="text-white text-4xl font-medium pt-[10px]">
+                White Wines
+              </p>
+              <a href="#" class="text-white text-xl font-medium py-2"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-black px-[52px] py-[50px]">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-3 gap-x-10">
+            <div>
+              <hr class="border-solid border-[1px] border-[#454545]" />
+              <p class="text-4xl font-medium text-white py-2">
+                KLASSIC PREMIUM - Your online wine shop
+              </p>
+              <p class="text-sm font-normal text-white py-2">
+                We're specialists in online sales, tried and trusted with over
+                16 years' experience in selling the best Spanish wines, Italian
+                wines, French wines and Argentinean wines in our catalogue.
+                There's our fast and guaranteed delivery service, and many
+                thousands of satisfied customers all over Europe, a very
+                extensive community sharing a passion for good wine.
+              </p>
+              <p class="text-sm font-normal text-white py-2">
+                Buying wine on the internet can be easier than searching along
+                the shelves of your local shop. Whether you're wanting to stock
+                up on your favourites, or to add a special bottle to your
+                collection, or just looking for something new, one of the
+                advantages of buying wine online is the tools and guides
+                available, set up to help you.
+              </p>
+            </div>
+            <div>
+              <hr class="border-solid border-[1px] border-[#454545]" />
+              <p class="text-lg font-medium text-white py-2">
+                A wide range with excellent service to suit the needs of every
+                wine lover
+              </p>
+              <p class="text-sm font-normal text-white py-2">
+                In our catalogue you'll come across not only the world's most
+                famous wineries but also individual landscapes bottled up into
+                wines with soul, fruits of the earth and elements, expressions
+                of their terroir, providing an honest reflection of each
+                vintage's profile.
+              </p>
+              <p class="text-sm font-normal text-white py-2">
+                Classic, modern and traditional wines; made from international
+                grapes and indigenous varieties, some very old and others
+                recovered; limited productions from exceptional vineyards
+                alongside great little easy-drinking wines, labelled with
+                creative, eye-catching designs; wines with the best
+                quality-price ratio beside the most expensive wines in the
+                world; sweet, rosé, fortified and orange wines; organic, natural
+                and biodynamic wines; those with their own identity, created by
+                meticulous vine growers, the most highly respected oenologists
+                and the country's finest wineries.
+              </p>
+            </div>
+            <div>
+              <hr class="border-solid border-[1px] border-[#454545]" />
+              <p class="font-medium text-lg text-white py-2">
+                The best selection of Spanish, Italian and international wines
+              </p>
+              <p class="text-sm font-normal text-white py-2">
+                In our catalogue you'll discover the most select Spanish wines,
+                together with an extensive offering of international wines from
+                the best and most well-known wineries.
+              </p>
+              <p class="text-sm font-normal text-white py-2">
+                Our virtual sommelier is at your disposal in just a few clicks,
+                and the best tool for finding perfect pairings.
+              </p>
+              <p class="text-sm font-normal text-white py-2">
+                There's the quality guarantee offered by ratings from Robert
+                Parker, Jancis Robinson, the Peñín Guide, James Suckling, the
+                Italian Sommelier Association's 4 Viti awards and the Gambero
+                Rosso's 3 Bicchieri, quality hallmarks. A final pointer: to help
+                you make up your mind, have a read through our customer reviews
+                and feedback.
+              </p>
+              <p class="text-sm font-normal text-white py-2">
+                A wine exists for every palate, pocket and occasion, and you'll
+                find them all at Vinissimus. If you can't, then ask us, and
+                we'll be happy to help you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white px-[52px] py-[50px]">
+        <div class="container mx-auto">
+          <div class="flex flex-col justify-center items-center py-[40px]">
+            <h1 class="font-medium text-4xl text-black">
+              Subscribe for Newsletter
+            </h1>
+            <p class="font-normal text-sm text-black py-2 mb-2">
+              Get Updates by subscribe our weekly newsletter to receive the
+              latest news, events & Promotions
+            </p>
+            <div
+              class="flex flex-row justify-center items-center border-2 border-solid px-[6px] py-1.5 gap-1 rounded-md"
+            >
+              <img src="images/email.png" alt="" class="w-full" />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                class="border-none outline-none"
+              />
+              <button class="bg-black text-white py-1 px-2">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-black px-[52px] py-[40px]">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-5 gap-5 text-white place-items-start">
+            <div class="flex flex-col">
+              <p class="font-medium text-sm py-1">Information</p>
+              <a href="#" class="font-normal text-sm">About us</a>
+              <a href="#" class="font-normal text-sm">Contact Us</a>
+              <a href="#" class="font-normal text-sm">Condition of purchase</a>
+              <a href="#" class="font-normal text-sm">Amount of use</a>
+            </div>
+            <div class="flex flex-col">
+              <p class="font-medium text-sm py-1">Categories</p>
+              <a href="#" class="font-normal text-sm">Red wines</a>
+              <a href="#" class="font-normal text-sm">Rose Wines</a>
+              <a href="#" class="font-normal text-sm">White</a>
+              <a href="#" class="font-normal text-sm">Champagne</a>
+              <a href="#" class="font-normal text-sm">Spirits </a>
+              <a href="#" class="font-normal text-sm">Delicatessen</a>
+            </div>
+            <div class="flex flex-col">
+              <p class="font-medium text-sm py-1">Most Popular</p>
+              <a href="#" class="font-normal text-sm">My order</a>
+              <a href="#" class="font-normal text-sm">My purchase</a>
+              <a href="#" class="font-normal text-sm">My credit</a>
+              <a href="#" class="font-normal text-sm">My info</a>
+            </div>
+            <div class="flex flex-col">
+              <p class="font-medium text-sm py-1">My Account</p>
+              <a href="#" class="font-normal text-sm">Red Wines</a>
+              <a href="#" class="font-normal text-sm">White Wines</a>
+              <a href="#" class="font-normal text-sm">Champagne</a>
+              <a href="#" class="font-normal text-sm">Rose Wines</a>
+            </div>
+
+            <div class="flex flex-col">
+              <p class="font-medium text-sm py-1">Top Search</p>
+              <a href="#" class="font-normal text-sm">Critical Acclaimed</a>
+              <a href="#" class="font-normal text-sm">Special Offers</a>
+              <a href="#" class="font-normal text-sm">Iconic Wines</a>
+              <a href="#" class="font-normal text-sm">Champagne</a>
+              <a href="#" class="font-normal text-sm">Spirits</a>
+              <a href="#" class="font-normal text-sm">Delicatessen</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-black px-[52px] py-[20px] border-t-2 border-white">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-5 place-items-start gap-[70px]">
+            <a href="#"
+              ><img src="images/logo.png" alt="" class="w-[190px]"
+            /></a>
+            <div class="flex flex-col">
+              <p class="text-white text-lg font-medium">Follow Us</p>
+              <div class="flex flex-row justify-center items-center gap-x-1.5">
+                <a href="#"
+                  ><img src="images/Twitter.png" alt="" class="py-2 w-full"
+                /></a>
+                <a href="#"
+                  ><img src="images/Pinterest.png" alt="" class="py-2 w-full"
+                /></a>
+                <a href="#"
+                  ><img src="images/Facebook.png" alt="" class="py-2 w-full"
+                /></a>
+                <a href="#"
+                  ><img src="images/Youtube.png" alt="" class="py-2 w-full"
+                /></a>
+                <a href="#"
+                  ><img src="images/Instagram.png" alt="" class="py-2 w-full"
+                /></a>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-sm font-normal text-[#FFFFFF]">
+                Monday-Friday: 09:00-19:00
+              </p>
+              <a href="#" class="text-sm font-bold text-white">
+                +34 932 684 286 / +34 608 845 245
+              </a>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-sm font-normal text-[#FFFFFF]">Our Location:</p>
+              <a href="#" class="text-sm font-bold text-white">
+                +Avenida Cornella 144, 7.408950 Esplugues De Llobregat
+                Barcelona, Spain
+              </a>
+            </div>
+            <img src="images/Frame 10.png" alt="" class="w-full" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          prevEl: ".custom-prev",
+          nextEl: ".custom-next",
+        },
+      });
+    </script>
+  </body>
+</html>
